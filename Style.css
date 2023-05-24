@@ -94,16 +94,6 @@ textarea {
     font-size: 15pt;
 }
 
-
-/* setup body color
-http://www.w3schools.com/tags/ref_colorpicker.asp
-#CEE3F6 - light blue
-#def - means #ddeeff; lighter blue than #CEE3F6
-#eee - light grey;
-#D3F3D9 - green
-#E1D690 - yellow
-#E1C304- olive
-
 /* table1 class */
 table.table1 { border-collapse: collapse; } /*collapse or  separate*/
 table.table1 th, td { border: 1px solid black; }
