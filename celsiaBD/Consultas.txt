@@ -1,0 +1,28 @@
+7. Promedio de notas de los empleados de Colombia.
+
+SELECT AVG(articulo.calificacion) AS promedio_notas
+FROM empleado
+JOIN articulo ON empleado.Id_empleado = articulo.Id_empleado
+WHERE empleado.Id_pais = '3';
+
+8. Promedio de notas de los empleados de Costa Rica.
+
+SELECT AVG(articulo.calificacion) AS promedio_notas
+FROM empleado
+JOIN articulo ON empleado.Id_empleado = articulo.Id_empleado
+WHERE empleado.Id_pais = '4';
+
+9. Promedio de notas de los empleados de Honduras.
+
+SELECT AVG(articulo.calificacion) AS promedio_notas
+FROM empleado
+JOIN articulo ON empleado.Id_empleado = articulo.Id_empleado
+WHERE empleado.Id_pais = '2';
+
+
+10. Promedio de notas de los empleados de Panamá
+
+SELECT AVG(articulo.calificacion) AS promedio_notas
+FROM empleado
+JOIN articulo ON empleado.Id_empleado = articulo.Id_empleado
+WHERE empleado.Id_pais = '1';
