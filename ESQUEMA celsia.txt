@@ -1,0 +1,77 @@
+CREATE TABLE empleado (
+  Activo CHAR(1),
+  ID_empleado VARCHAR(100)PRIMARY KEY,
+  ID_usuario VARCHAR(100),
+  Genero VARCHAR(10),
+  Primer_Nombre VARCHAR(50),
+  Primer_Apellido VARCHAR(50),
+  Grupo_de_Personal VARCHAR(100),
+  Id_pais VARCHAR(100) llave foranea
+ 
+);
+
+CREATE TABLE Supervisor (
+  ID_supervisor INT PRIMARY KEY,
+  Nombre_supervisor VARCHAR(100),
+  Apellidos_supervisor VARCHAR(100)
+);
+
+CREATE TABLE recursos_humanos (
+  Id_Usuario_HR VARCHAR(100) PRIMARY KEY,
+  Primer_Nombre_HR VARCHAR(50),
+  Apellido_HR VARCHAR(50)
+);
+
+CREATE TABLE Ciudad (
+  Ciudad VARCHAR(100),
+  Id_ciudad VARCHAR(100) PRIMARY KEY
+);
+
+CREATE TABLE pais_region (
+  Pais VARCHAR(50),
+  Id_pais VARCHAR(100) PRIMARY KEY
+  
+);
+
+CREATE TABLE Estado_provincia (
+  Provincia VARCHAR(50),
+  Codigo VARCHAR(20) PRIMARY KEY
+);
+
+CREATE TABLE ubicacionP (
+  Ubicacion_principal VARCHAR(100) ,
+  Id_ubicacion VARCHAR(100) PRIMARY KEY
+);
+
+DELETE FROM ubicacionp;
+
+CREATE TABLE articulo (
+  id_articulo VARCHAR(40) PRIMARY KEY,
+  Id_empleado VARCHAR(100)llave foranea,
+  tipo_articulo VARCHAR(50),
+  titulo_articulo VARCHAR(100),
+  calificacion VARCHAR(100),
+  estado_progreso VARCHAR(50),
+  fecha_finalizacion VARCHAR(60),
+  horas_totales VARCHAR(100)
+);
+
+
+
+CREATE TABLE compania (
+  Ubicacion_principal VARCHAR(100),
+  compania VARCHAR(100) PRIMARY KEY
+  
+);
+
+CREATE TABLE curso (
+  titulo_Articulo VARCHAR(100),
+  activo CHAR(1),
+  origen VARCHAR(50),
+  idioma VARCHAR(50),
+  descripcion_Categoria_tematica VARCHAR(255),
+  area_conocimiento VARCHAR(100),
+  tipo_contenido VARCHAR(100),
+  Proposito_formacion VARCHAR(255)
+  
+);
